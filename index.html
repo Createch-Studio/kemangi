@@ -171,5 +171,51 @@
   💬 Pesan via WhatsApp
 </a>
 
+
+<!-- Install Banner -->
+<div id="installBanner"
+     class="fixed bottom-24 left-1/2 -translate-x-1/2 w-[90%] max-w-md hidden
+            bg-white border shadow-lg rounded-2xl p-4 flex items-center justify-between z-50">
+  <div>
+    <p class="font-semibold text-sm">Install Kemangi Catering</p>
+    <p class="text-xs text-neutral-500">Akses lebih cepat seperti aplikasi</p>
+  </div>
+  <button id="installBtn"
+          class="ml-3 bg-[color:var(--kemangi-purple)] text-white text-sm px-4 py-2 rounded-xl">
+    Install
+  </button>
+</div>
+
+<script>
+let deferredPrompt;
+const banner = document.getElementById("installBanner");
+const installBtn = document.getElementById("installBtn");
+
+window.addEventListener("beforeinstallprompt", (e) => {
+  e.preventDefault(); // cegah prompt otomatis
+  deferredPrompt = e;
+  banner.classList.remove("hidden"); // tampilkan banner
+});
+
+installBtn.addEventListener("click", async () => {
+  if (!deferredPrompt) return;
+
+  deferredPrompt.prompt();
+  const choice = await deferredPrompt.userChoice;
+
+  if (choice.outcome === "accepted") {
+    banner.classList.add("hidden");
+  }
+
+  deferredPrompt = null;
+});
+</script>
+
+<script>
+if (window.matchMedia('(display-mode: standalone)').matches) {
+  document.getElementById("installBanner")?.remove();
+}
+</script>
+
 </body>
 </html>
