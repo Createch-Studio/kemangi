@@ -176,15 +176,27 @@
 <div id="installBanner"
      class="fixed bottom-24 left-1/2 -translate-x-1/2 w-[90%] max-w-md hidden
             bg-white border shadow-lg rounded-2xl p-4 flex items-center justify-between z-50">
+
   <div>
     <p class="font-semibold text-sm">Install Kemangi Catering</p>
     <p class="text-xs text-neutral-500">Akses lebih cepat seperti aplikasi</p>
   </div>
-  <button id="installBtn"
-          class="ml-3 bg-[color:var(--kemangi-purple)] text-white text-sm px-4 py-2 rounded-xl">
-    Install
-  </button>
+
+  <div class="flex items-center gap-2">
+    <button id="installBtn"
+      class="bg-[color:var(--kemangi-purple)] text-white text-sm px-4 py-2 rounded-xl">
+      Install
+    </button>
+
+    <!-- Close button -->
+    <button id="closeInstall"
+      class="text-neutral-400 text-xl leading-none px-2">
+      ×
+    </button>
+  </div>
+
 </div>
+
 
 <script>
 let deferredPrompt;
