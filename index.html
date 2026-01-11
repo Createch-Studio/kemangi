@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kemangi Catering</title>
   <meta name="description" content="Kemangi Catering – Catering modern & lezat. Pesan mudah via WhatsApp." />
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#7C5786">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root {
@@ -23,7 +25,7 @@
   <div class="max-w-md mx-auto flex justify-between items-center p-4">
     <h1 class="font-semibold text-lg text-[color:var(--kemangi-purple)]">🍽️ Kemangi Catering</h1>
     <a href="https://wa.me/6281234567890" class="text-sm font-semibold text-[color:var(--kemangi-purple)]">
-      Pesan
+      
     </a>
   </div>
 </header>
@@ -40,7 +42,7 @@
   </div>
 </section>
 
-<!-- Menu -->
+<!-- Menu  Favorit-->
 <section class="max-w-md mx-auto px-4 mt-6">
   <h3 class="font-semibold mb-3">Menu Favorit</h3>
 
@@ -52,14 +54,14 @@
         <img src="images/ayam-bakar-1.jpg" class="w-full h-full object-cover" alt="">
       </div>
       <div class="p-3">
-        <h4 class="text-sm font-semibold leading-tight">Nasi Box Ayam Bakar</h4>
-        <p class="text-xs text-neutral-500 mt-1">Ayam Bakar</p>
+        <h4 class="text-sm font-semibold leading-tight">Ayam Kampung Bakar</h4>
+        <p class="text-xs text-neutral-500 mt-1">Nasi, Ayam Kampung </p>
         <p class="font-bold text-sm text-[color:var(--kemangi-purple)] mt-2">
-          Rp25.000
+          Mulai Rp25.000
         </p>
-        <a href="ayam-bakar"
+        <a href="ayam-kampung-bakar"
            class="mt-2 block text-center text-xs font-semibold border border-[color:var(--kemangi-purple)] text-[color:var(--kemangi-purple)] py-2 rounded-lg">
-          Detail
+          Lihat
         </a>
       </div>
     </div>
@@ -68,14 +70,14 @@
     <div class="bg-white rounded-2xl shadow overflow-hidden">
       <div class="aspect-[4/3] bg-neutral-200"></div>
       <div class="p-3">
-        <h4 class="text-sm font-semibold">Nasi Box Rendang</h4>
-        <p class="text-xs text-neutral-500 mt-1">Rendang empuk</p>
+        <h4 class="text-sm font-semibold">Nasi Rendang</h4>
+        <p class="text-xs text-neutral-500 mt-1">Rendang empuk & lezat</p>
         <p class="font-bold text-sm text-[color:var(--kemangi-purple)] mt-2">
-          Mulai Rp30.000
+          Mulai Rp25.000
         </p>
-        <a href="menu-rendang.html"
+        <a href="nasi-rendang"
            class="mt-2 block text-center text-xs font-semibold border border-[color:var(--kemangi-purple)] text-[color:var(--kemangi-purple)] py-2 rounded-lg">
-          Detail
+          Lihat
         </a>
       </div>
     </div>
@@ -83,6 +85,86 @@
   </div>
 </section>
 
+<!-- Menu Ekonomis -->
+<section class="max-w-md mx-auto px-4 mt-6">
+  <h3 class="font-semibold mb-3">Menu Ekonomis</h3>
+
+  <div class="grid grid-cols-2 gap-4">
+
+    <!-- Card -->
+    <div class="bg-white rounded-2xl shadow overflow-hidden">
+      <div class="aspect-[4/3] bg-neutral-200">
+        <img src="images/ayam-bakar-1.jpg" class="w-full h-full object-cover" alt="">
+      </div>
+      <div class="p-3">
+        <h4 class="text-sm font-semibold leading-tight">Paket ayam goreng</h4>
+        <p class="text-xs text-neutral-500 mt-1">Nasi Ayam goreng</p>
+        <p class="font-bold text-sm text-[color:var(--kemangi-purple)] mt-2">
+          Mulai Rp10.000
+        </p>
+        <a href="ayam-bakar"
+           class="mt-2 block text-center text-xs font-semibold border border-[color:var(--kemangi-purple)] text-[color:var(--kemangi-purple)] py-2 rounded-lg">
+          Lihat
+        </a>
+      </div>
+    </div>
+
+    <!-- Card -->
+    <div class="bg-white rounded-2xl shadow overflow-hidden">
+      <div class="aspect-[4/3] bg-neutral-200"></div>
+      <div class="p-3">
+        <h4 class="text-sm font-semibold">Paket ayam bakar</h4>
+        <p class="text-xs text-neutral-500 mt-1">nasi ayam bakar</p>
+        <p class="font-bold text-sm text-[color:var(--kemangi-purple)] mt-2">
+          Mulai Rp12.000
+        </p>
+        <a href="menu-rendang.html"
+           class="mt-2 block text-center text-xs font-semibold border border-[color:var(--kemangi-purple)] text-[color:var(--kemangi-purple)] py-2 rounded-lg">
+          Lihat
+        </a>
+      </div>
+    </div>
+
+    <!-- Card -->
+    <div class="bg-white rounded-2xl shadow overflow-hidden">
+      <div class="aspect-[4/3] bg-neutral-200">
+        <img src="images/ayam-bakar-1.jpg" class="w-full h-full object-cover" alt="">
+      </div>
+      <div class="p-3">
+        <h4 class="text-sm font-semibold leading-tight">Paket semur ayam</h4>
+        <p class="text-xs text-neutral-500 mt-1">Nasi semur ayam</p>
+        <p class="font-bold text-sm text-[color:var(--kemangi-purple)] mt-2">
+          Mulai Rp20.000
+        </p>
+        <a href="ayam-bakar"
+           class="mt-2 block text-center text-xs font-semibold border border-[color:var(--kemangi-purple)] text-[color:var(--kemangi-purple)] py-2 rounded-lg">
+          Lihat
+        </a>
+      </div>
+    </div>
+
+    <!-- Card -->
+    <div class="bg-white rounded-2xl shadow overflow-hidden">
+      <div class="aspect-[4/3] bg-neutral-200"></div>
+      <div class="p-3">
+        <h4 class="text-sm font-semibold">Paket fried chicken</h4>
+        <p class="text-xs text-neutral-500 mt-1">fried chicken renyah</p>
+        <p class="font-bold text-sm text-[color:var(--kemangi-purple)] mt-2">
+          Harga Rp10.000
+        </p>
+        <a href="menu-rendang.html"
+           class="mt-2 block text-center text-xs font-semibold border border-[color:var(--kemangi-purple)] text-[color:var(--kemangi-purple)] py-2 rounded-lg">
+          Lihat
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<br><br><br><br>
 <!-- Sticky WA -->
 <a href="https://wa.me/6281234567890"
    class="fixed bottom-4 left-1/2 -translate-x-1/2 w-[90%] max-w-md bg-[color:var(--kemangi-purple)] text-white py-4 rounded-2xl shadow text-center font-semibold">
