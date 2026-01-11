@@ -197,15 +197,32 @@
 
 </div>
 
-
 <script>
 let deferredPrompt;
 const banner = document.getElementById("installBanner");
 const installBtn = document.getElementById("installBtn");
 const closeBtn = document.getElementById("closeInstall");
 
+const DISMISS_DAYS = 1; // muncul lagi setelah 3 hari
+
+function isInstalled() {
+  return window.matchMedia('(display-mode: standalone)').matches
+    || window.navigator.standalone === true;
+}
+
+function canShowBanner() {
+  const dismissedAt = localStorage.getItem("installDismissedAt");
+  if (!dismissedAt) return true;
+
+  const diffDays =
+    (Date.now() - Number(dismissedAt)) / (1000 * 60 * 60 * 24);
+
+  return diffDays >= DISMISS_DAYS;
+}
+
 window.addEventListener("beforeinstallprompt", (e) => {
-  if (localStorage.getItem("installDismissed")) return;
+  if (isInstalled()) return;
+  if (!canShowBanner()) return;
 
   e.preventDefault();
   deferredPrompt = e;
@@ -227,7 +244,7 @@ installBtn.addEventListener("click", async () => {
 
 closeBtn.addEventListener("click", () => {
   banner.classList.add("hidden");
-  localStorage.setItem("installDismissed", "true");
+  localStorage.setItem("installDismissedAt", Date.now());
 });
 </script>
 
