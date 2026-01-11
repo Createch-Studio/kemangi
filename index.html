@@ -197,13 +197,14 @@
 
 </div>
 
+
 <script>
 let deferredPrompt;
 const banner = document.getElementById("installBanner");
 const installBtn = document.getElementById("installBtn");
 const closeBtn = document.getElementById("closeInstall");
 
-const DISMISS_DAYS = 1; // muncul lagi setelah 3 hari
+const DISMISS_MINUTES = 30;
 
 function isInstalled() {
   return window.matchMedia('(display-mode: standalone)').matches
@@ -214,10 +215,10 @@ function canShowBanner() {
   const dismissedAt = localStorage.getItem("installDismissedAt");
   if (!dismissedAt) return true;
 
-  const diffDays =
-    (Date.now() - Number(dismissedAt)) / (1000 * 60 * 60 * 24);
+  const diffMinutes =
+    (Date.now() - Number(dismissedAt)) / (1000 * 60);
 
-  return diffDays >= DISMISS_DAYS;
+  return diffMinutes >= DISMISS_MINUTES;
 }
 
 window.addEventListener("beforeinstallprompt", (e) => {
