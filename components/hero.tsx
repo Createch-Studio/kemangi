@@ -22,6 +22,16 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative text-center max-w-2xl mx-auto z-10">
+        <div className="flex justify-center mb-6">
+          <Image
+            src="/logo.png"
+            alt="Kemangi Catering Logo"
+            width={80}
+            height={80}
+            className="w-28 h-28 md:w-60 md:h-60"
+          />
+        </div>
+
         <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance text-white leading-tight">Kemangi Catering</h1>
 
         <p className="text-lg md:text-xl text-white/90 mb-8 text-balance leading-relaxed">
