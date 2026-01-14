@@ -69,9 +69,9 @@ export default function MenuShowcase() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-8">
           {menus.map((menu) => (
             <div key={menu.id}>
-              <Card className="h-full overflow-hidden border-0 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 bg-card flex flex-col">
+              <Card className="h-full overflow-hidden border-0 rounded-2xl shadow-md bg-card flex flex-col">
                 {/* Image on top */}
-                <div className="aspect-square bg-muted overflow-hidden">
+                <div className="aspect-video overflow-hidden rounded-t-2xl">
                   <img
                     src={menu.image || "/placeholder.svg?height=150&width=200"}
                     alt={menu.name}
