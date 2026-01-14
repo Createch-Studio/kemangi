@@ -66,6 +66,19 @@ export default function MenuShowcase() {
           </p>
         </div>
 
+        <div id="favorite" className="text-center">
+          <a
+            href="#favorite"
+          >
+            <Button
+              size="lg"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg font-semibold"
+            >
+              Menu Favorite
+            </Button>
+          </a>
+        </div>
+
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-8">
           {menus.map((menu) => (
             <div key={menu.id}>
