@@ -66,16 +66,6 @@ export default function MenuShowcase() {
           </p>
         </div>
 
-        <div id="favorite" className="text-left">
-          <a href="#favorite">
-            <Button
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg font-semibold  h-10">
-              Menu Favorite
-            </Button>
-          </a>
-        </div>
-
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-8">
           {menus.map((menu) => (
             <div key={menu.id}>
@@ -90,6 +80,9 @@ export default function MenuShowcase() {
                 </div>
 
                 {/* Content section */}
+                <span className="inline-block text-xs font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full mb-3">
+                {item.category}
+                </span>
                 <div className="p-3 flex flex-col flex-1">
                   <h3 className="font-bold text-sm text-foreground line-clamp-2 mb-1">{menu.name}</h3>
 
