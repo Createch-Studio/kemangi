@@ -3,6 +3,7 @@
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import Image from "next/image"
 
 const menus = [
   {
@@ -71,18 +72,20 @@ export default function MenuShowcase() {
             <div key={menu.id}>
               <Card className="h-full overflow-hidden border-0 rounded-2xl shadow-md bg-card flex flex-col">
                 {/* Image on top */}
-                <div className="aspect-video overflow-hidden rounded-t-2xl">
-                  <img
-                    src={menu.image || "/placeholder.svg?height=150&width=200"}
+                <div className="relative aspect-video overflow-hidden rounded-t-2xl">
+                  <Image
+                    src={menu.image || "/placeholder.svg?height=200&width=200"}
                     alt={menu.name}
+                    width={300}
+                    height={225}
                     className="w-full h-full object-cover"
                   />
                 </div>
 
                 {/* Content section */}
                 <div className="p-3 flex flex-col flex-1">
-                  <span className="inline-block text-xs font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full mb-3">
-                  {menu.category}
+                  <span className="inline-block text-xs font-semibold text-primary bg-primary/10 px-2 py-0.5 rounded-full mb-2 w-fit">
+                    {menu.category}
                   </span>
                   <h3 className="font-bold text-sm text-foreground line-clamp-2 mb-1">{menu.name}</h3>
                   {/* <p className="text-xs text-foreground/60 mb-3">{menu.description}</p> */}
