@@ -49,7 +49,7 @@ export default function Hero() {
             </Button>
           </Link>
           <a
-            href="https://wa.me/6281234567890?text=Halo%20Kemangi%20Catering%2C%20saya%20ingin%20memesan%20catering"
+            href="https://wa.me/6281327746081?text=Halo%20Kemangi%20Catering%2C%20saya%20ingin%20memesan%20catering"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto"

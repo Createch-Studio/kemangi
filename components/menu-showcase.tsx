@@ -9,49 +9,49 @@ const menus = [
     id: 1,
     name: "Paket Ayam Kampung Bakar",
     category: "Paket Standar",
-    price: 45000,
+    price: 25000,
     image: "/nasi-kuning-ayam-goreng-indonesia-catering.jpg",
-    description: "Ayam bumbu kemangi",
+    description: "Ayam Kampung Bakar",
   },
   {
     id: 2,
-    name: "Soto Ayam Premium",
+    name: "Paket Ayam Goreng",
     category: "Paket Standar",
-    price: 50000,
+    price: 10000,
     image: "/soto-ayam-premium-indonesia.jpg",
-    description: "Rendang empuk",
+    description: "Ayam Goreng",
   },
   {
     id: 3,
-    name: "Rendang Daging Padang",
+    name: "Paket Daging Rendang",
     category: "Paket Premium",
-    price: 65000,
+    price: 30000,
     image: "/rendang-daging-padang-indonesia.jpg",
     description: "Daging berkualitas tinggi",
   },
   {
     id: 4,
-    name: "Lumpia Goreng Spesial",
+    name: "Paket Semur Ayam",
     category: "Appetizer",
-    price: 35000,
+    price: 20000,
     image: "/lumpia-goreng-spesial.jpg",
     description: "Gurih dan renyah",
   },
   {
     id: 5,
-    name: "Gado-gado Jakarta",
+    name: "Paket Fried Chicken",
     category: "Sayuran",
-    price: 40000,
+    price: 10000,
     image: "/gado-gado-jakarta-tradisional.jpg",
-    description: "Saus kacang kental",
+    description: "Fried Chicken",
   },
   {
     id: 6,
-    name: "Perkedel Goreng",
+    name: "Paket Nasi Punar",
     category: "Appetizer",
     price: 25000,
     image: "/perkedel-goreng-kentang.jpg",
-    description: "Kentang goreng bawang",
+    description: "Nasi Punar",
   },
 ]
 
@@ -73,7 +73,7 @@ export default function MenuShowcase() {
                 {/* Image on top */}
                 <div className="aspect-square bg-muted overflow-hidden">
                   <img
-                    src={menu.image || "/placeholder.svg?height=200&width=200"}
+                    src={menu.image || "/placeholder.svg?height=150&width=200"}
                     alt={menu.name}
                     className="w-full h-full object-cover"
                   />
@@ -101,7 +101,7 @@ export default function MenuShowcase() {
 
         <div className="text-center">
           <a
-            href="https://wa.me/6281234567890?text=Saya%20tertarik%20memesan%20catering%20Kemangi"
+            href="https://wa.me/6281327746081?text=Saya%20tertarik%20memesan%20catering%20Kemangi"
             target="_blank"
             rel="noopener noreferrer"
           >
