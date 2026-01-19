@@ -9,12 +9,12 @@ import { Card } from "@/components/ui/card"
 
 const menuItems = {
   "1": {
-    name: "Nasi Kuning Ayam Goreng",
-    category: "Paket Standar",
-    price: 45000,
+    name: "Nasi Ayam Kampung Bakar",
+    category: "Paket Reguler",
+    price: 25000,
     image: "/nasi-kuning-ayam-goreng-indonesia-catering.jpg",
     description:
-      "Nasi kuning harum yang dimasak dengan santan dan rempah pilihan, disertai ayam goreng renyah dengan sambal pedas.",
+      "Paket Nasi Ayam Kampung Bakar: nasi hangat dengan ayam kampung bakar berbumbu khas, dipanggang hingga harum dan gurih, disajikan bersama sambal dan lalapan segar.",
     details: [
       "Nasi kuning harum dengan bumbu kunyit dan santan",
       "Ayam goreng ukuran potong dada dan paha",
@@ -28,7 +28,7 @@ const menuItems = {
   },
   "2": {
     name: "Soto Ayam Premium",
-    category: "Paket Standar",
+    category: "Paket Reguler",
     price: 50000,
     image: "/soto-ayam-premium-indonesia.jpg",
     description:
