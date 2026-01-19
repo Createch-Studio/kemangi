@@ -81,22 +81,56 @@ const menus = [
 ]
 
 export default function MenuShowcase() {
+  const [selectedCategory, setSelectedCategory] = useState("Semua")
+
+  // Get unique categories
+  const categories = useMemo(
+    () => ["Semua", ...Array.from(new Set(menus.map((m) => m.category)))],
+    []
+  )
+
+  // Filter menus based on selected category
+  const filteredMenus = useMemo(
+    () =>
+      selectedCategory === "Semua"
+        ? menus
+        : menus.filter((menu) => menu.category === selectedCategory),
+    [selectedCategory]
+  )
+
   return (
     <section id="menu" className="py-16 px-4 bg-background">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Menu Kami</h2>
           <p className="text-foreground/70 max-w-2xl mx-auto">
-            Menu berkualitas tinggi dengan bahan-bahan segar
+            Pilihan menu berkualitas tinggi dengan bahan-bahan segar dan resep tradisional
           </p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-8">
-          {menus.map((menu) => (
+        {/* Category Filter */}
+        <div className="flex gap-2 mb-8 overflow-x-auto pb-2">
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => setSelectedCategory(category)}
+              className={`px-4 py-2 rounded-full font-semibold text-sm whitespace-nowrap transition-all ${
+                selectedCategory === category
+                  ? "bg-primary text-primary-foreground"
+                  : "bg-primary/10 text-primary hover:bg-primary/20"
+              }`}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
+          {filteredMenus.map((menu) => (
             <div key={menu.id}>
               <Card className="h-full overflow-hidden border-0 rounded-2xl shadow-md bg-card flex flex-col">
                 {/* Image on top */}
-                <div className="relative aspect-video overflow-hidden rounded-t-2xl">
+                <div className="aspect-video overflow-hidden rounded-t-2xl">
                   <Image
                     src={menu.image || "/placeholder.svg?height=200&width=200"}
                     alt={menu.name}
