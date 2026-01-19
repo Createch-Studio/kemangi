@@ -26,7 +26,7 @@ const menus = [
   {
     id: 3,
     name: "Nasi Daging Rendang",
-    category: "Paket Standar",
+    category: "Paket Reguler",
     price: 25000,
     image: "/rendang-daging-padang-indonesia.jpg",
     description: "Daging berkualitas tinggi",
@@ -42,7 +42,7 @@ const menus = [
   {
     id: 5,
     name: "Nasi Daging Rendang",
-    category: "Paket Premium+",
+    category: "Paket Premium",
     price: 34000,
     image: "/gado-gado-jakarta-tradisional.jpg",
     description: "Fried Chicken",
@@ -79,10 +79,34 @@ const menus = [
     image: "/perkedel-goreng-kentang.jpg",
     description: "Fried Chicken",
   },
+  {
+    id: 10,
+    name: "Paket Fried Chicken",
+    category: "Paket Spesial",
+    price: 10000,
+    image: "/perkedel-goreng-kentang.jpg",
+    description: "Fried Chicken",
+  },
+  {
+    id: 11,
+    name: "Paket Fried Chicken",
+    category: "Paket Ekonomis",
+    price: 10000,
+    image: "/perkedel-goreng-kentang.jpg",
+    description: "Fried Chicken",
+  },
+  {
+    id: 12,
+    name: "Paket Fried Chicken",
+    category: "Paket Ekonomis",
+    price: 10000,
+    image: "/perkedel-goreng-kentang.jpg",
+    description: "Fried Chicken",
+  },
 ]
 
 export default function MenuShowcase() {
-  const [selectedCategory, setSelectedCategory] = useState("Semua")
+  const [selectedCategory, setSelectedCategory] = useState("Paket Reguler")
 
   // Get unique categories
   const categories = useMemo(
