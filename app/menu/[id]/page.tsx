@@ -290,13 +290,13 @@ export default function MenuDetail() {
     <main className="bg-background pb-20">
       <div className="sticky top-0 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-40 px-4 py-3 border-b border-border">
         <div className="max-w-2xl mx-auto flex items-center justify-between gap-3">
-          <Link href="/" className="inline-flex items-center gap-2 text-primary hover:text-primary/80">
+          <Link href="/#menu" className="inline-flex items-center gap-2 text-primary hover:text-primary/80">
             <ArrowLeft className="w-5 h-5" />
             <span className="font-semibold">Kembali</span>
           </Link>
           <h1 className="text-lg font-bold text-foreground truncate flex-1">{item.name}</h1>
           <a
-            href={`https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20${encodeURIComponent(item.name)}%20(%20${item.price}%20)%20untuk%201%20porsi`}
+            href={`https://wa.me/6281327746081?text=Saya%20ingin%20memesan%20${encodeURIComponent(item.name)}%20(%20${item.price}%20)%20untuk%201%20porsi`}
             target="_blank"
             rel="noopener noreferrer"
           >
