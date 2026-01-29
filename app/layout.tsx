@@ -11,9 +11,20 @@ const urbanist = Urbanist({
 })
 
 export const metadata: Metadata = {
-  title: "Kemangi Catering - Layanan Catering Terbaik di Demak",
+  title: "Kemangi Catering - Layanan Catering Demak Sekitar",
   description:
-    "Kemangi Catering menyediakan layanan catering berkualitas dengan menu tradisional dan modern. Pesan sekarang melalui WhatsApp untuk acara Anda. Katering Pasir - Mijen - Demak",
+    "Kemangi Catering menyediakan layanan catering berkualitas dengan menu tradisional dan modern. Pesan melalui WhatsApp untuk acara Anda. 0813-2774-6081 Katering Pasir - Mijen - Demak",
+	keywords: [
+    "catering demak",
+    "katering demak",
+    "catering mijen",
+    "katering pasir demak",
+    "catering hajatan demak",
+    "catering prasmanan demak",
+    "catering wedung demak",
+    "jasa catering wedung demak",
+    "kemangi catering",
+  ],
   generator: "v0.app",
   metadataBase: new URL("https://kemangi.my.id"),
   manifest: "/manifest.json",
@@ -26,8 +37,8 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: "Kemangi Catering - Layanan Catering Terbaik",
-    description: "Layanan catering profesional dengan menu pilihan lengkap",
+    title: "Kemangi Catering - Layanan Catering Demak Sekitar",
+    description: "Kemangi Catering menyediakan layanan catering berkualitas dengan menu tradisional dan modern. Pesan melalui WhatsApp untuk acara Anda. 0813-2774-6081 Katering Pasir - Mijen - Demak",
     type: "website",
     locale: "id_ID",
   },
@@ -69,8 +80,8 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              name: "Kemangi Catering",
-              description: "Layanan catering berkualitas dengan menu tradisional Indonesia",
+              name: "Kemangi Catering - Layanan Catering Demak Sekitar",
+              description: "Kemangi Catering menyediakan layanan catering berkualitas dengan menu tradisional dan modern. Pesan melalui WhatsApp untuk acara Anda. Katering Pasir - Mijen - Demak",
               telephone: "+62 813-2774-6081",
               url: "https://kemangi.my.id",
               areaServed: "ID",
