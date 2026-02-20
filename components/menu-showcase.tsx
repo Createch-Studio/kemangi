@@ -123,7 +123,7 @@ const menus = [
     id: 15,
     name: "Nasi Tumpeng",
     category: "Paket Spesial",
-    price: 0,
+    price: 150000,
     image: "/nasi-tumpeng.webp",
     description: "Paket Nasi Tumpeng",
   },
