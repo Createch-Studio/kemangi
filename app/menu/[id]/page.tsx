@@ -235,8 +235,8 @@ const menuItems = {
       "Lepet/kupat",
       "3 Jajan",
     ],
-    rating: 4.5,
-    reviews: 156,
+    rating: 4.9,
+    reviews: 278,
     servings: "/ porsi",
   },
   "14": {
