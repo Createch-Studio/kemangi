@@ -30,7 +30,7 @@ const menuItems = {
     name: "Nasi Semur Ayam",
     category: "Paket Reguler",
     price: 20000,
-    image: "/semur-ayam.webp",
+    image: "/ayam-semur-opt.webp",
     description:
       "Nasi hangat disajikan dengan semur ayam empuk berbumbu rempah khas, dimasak perlahan hingga meresap sempurna. Perpaduan rasa manis gurih yang sederhana, hangat, dan selalu bikin rindu.",
     details: [
@@ -64,7 +64,7 @@ const menuItems = {
     name: "Nasi Fried Chicken",
     category: "Paket Reguler",
     price: 10000,
-    image: "/fried-chicken.webp",
+    image: "/fried-chicken-10k.webp",
     description:
       "Nasi hangat disajikan dengan fried chicken renyah di luar dan juicy di dalam. Gurih, lezat, dan pas dinikmati kapan saja.",
     details: [
@@ -81,7 +81,7 @@ const menuItems = {
     name: "Nasi Ayam Bakar",
     category: "Paket Reguler",
     price: 12000,
-    image: "/ayam-bakar.webp",
+    image: "/ayam-bakar-regular_opt.webp",
     description: "Paket Nasi Ayam Kampung Bakar: nasi hangat dengan ayam kampung bakar berbumbu khas, dipanggang hingga harum dan gurih, disajikan bersama sambal dan lalapan segar.",
     details: [
       "Nasi nok kecil",
@@ -97,7 +97,7 @@ const menuItems = {
     name: "Nasi Ayam Goreng",
     category: "Paket Reguler",
     price: 10000,
-    image: "/ayam-goreng.webp",
+    image: "/ayam-goreng-regular_opt.webp",
     description:
       "Nasi hangat dengan ayam goreng keemasan yang renyah di luar dan empuk di dalam. Rasa gurih sederhana yang selalu jadi favorit.",
     details: [
@@ -254,7 +254,21 @@ const menuItems = {
       "Paket sambal goreng 20 porsi = 20.000",
     ],
     rating: 4.5,
-    reviews: 156,
+    reviews: 255,
+    servings: "-",
+  },
+  "15": {
+    name: "Nasi Tumpeng",
+    category: "Paket Spesial",
+    price: 150000,
+    image: "/nasi-tumpeng.webp",
+    description:
+      "Paket Nasi Tumpeng Premium kami menyajikan nasi kuning bumbu rempah pilihan dengan deretan lauk pauk tradisional yang lengkap dan tertata estetik. Simbol keberkahan yang siap menyempurnakan hari bahagia Anda.",
+    details: [
+      "Paket Nasi Tumpeng",
+    ],
+    rating: 4.8,
+    reviews: 16,
     servings: "-",
   },
 }

@@ -20,7 +20,7 @@ const menus = [
     name: "Nasi Semur Ayam",
     category: "Paket Reguler",
     price: 20000,
-    image: "/semur-ayam.webp",
+    image: "/ayam-semur_opt.webp",
     description: "Semur Ayam",
   },
   {
@@ -36,7 +36,7 @@ const menus = [
     name: "Nasi Fried Chicken",
     category: "Paket Reguler",
     price: 10000,
-    image: "/fried-chicken.webp",
+    image: "/chiken-regular_opt.webp",
     description: "Fried Chicken",
   },
   {
@@ -44,7 +44,7 @@ const menus = [
     name: "Nasi Ayam Bakar",
     category: "Paket Reguler",
     price: 12000,
-    image: "/ayam-bakar.webp",
+    image: "/ayam-bakar-regular_opt.webp",
     description: "Ayam Bakar",
   },
   {
@@ -52,7 +52,7 @@ const menus = [
     name: "Nasi Ayam Goreng",
     category: "Paket Reguler",
     price: 10000,
-    image: "/ayam-goreng.webp",
+    image: "/ayam-goreng-regular_opt.webp",
     description: "Ayam Goreng",
   },
   {
@@ -118,6 +118,14 @@ const menus = [
     price: 0,
     image: "/ingkung-ayam.webp",
     description: "Ingkung Ayam",
+  },
+  {
+    id: 15,
+    name: "Nasi Tumpeng",
+    category: "Paket Spesial",
+    price: 0,
+    image: "/nasi-tumpeng.webp",
+    description: "Paket Nasi Tumpeng",
   },
 ]
 
